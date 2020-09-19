@@ -141,7 +141,7 @@ def val_image_loader(files, labels, batch_size):
 
 
 model = build_model(input_shape)
-model.compile(loss='categorical_crossentropy', optimizer=opt)
+model.compile(loss='categorical_crossentropy', optimizer=opt, metrics=["acc"])
 
 model.summary()
 
